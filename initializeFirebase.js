@@ -6,7 +6,7 @@ dotenv.config();
 // console.log(process.env.TYPE);
 
 var serviceAccount = {
-  type:process.env.TYPE,
+  type:"service_account", 
   project_id: process.env.PROJECT_ID,
   private_key_id: process.env.PRIVATE_KEY_ID,
   private_key:process.env.PRIVATE_KEY,
@@ -16,7 +16,7 @@ var serviceAccount = {
   token_uri:process.env.TOKEN_URI ,
   auth_provider_x509_cert_url:process.env.AUTH_PROVIDER, 
   client_x509_cert_url:process.env.CLIENT_CERT,
-  universe_domain:process.env.UNIVERSE_DOMAIN,
+  universe_domain:"googleapis.com",
 };
 
 admin.initializeApp({
